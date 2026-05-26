@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#161B2A"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Habit Icon/Emoji -->
+    <TextView
+        android:id="@+id/widget_habit_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💧"
+        android:textSize="20sp" />
+
+    <!-- Habit Title & Progress -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+        
+        <TextView
+            android:id="@+id/widget_habit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink Water"
+            android:textColor="#F1F5F9"
+            android:textStyle="bold" />
+            
+        <TextView
+            android:id="@+id/widget_habit_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 3000 ml"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Quick + Action Button -->
+    <TextView
+        android:id="@+id/widget_action_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#5465FF"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:contentDescription="Add Progress" />
+</LinearLayout>
